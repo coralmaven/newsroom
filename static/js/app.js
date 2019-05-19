@@ -17,7 +17,7 @@ let chosenYAxis = "obesity";
 
 // Retrieve data from the CSV file and execute everything below
 (async function(){
-    const stateData = await d3.csv("assets/data/data.csv");
+    const stateData = await d3.csv("static/data/data.csv");
 
     // parse data into ints
     stateData.forEach(function(data) {
