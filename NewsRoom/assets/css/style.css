@@ -1,0 +1,114 @@
+.iframeContainer {
+  padding: 20px;
+  border: 1px solid #e3e3e3;
+}
+
+/* Sticky Footer rules (https://getbootstrap.com/examples/sticky-footer/) */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Padding bottom by footer height */
+  padding-bottom: 80px;
+}
+
+#newsroom {
+  z-index: -2;
+  stroke: #BF0A30;
+  opacity: 0.1;
+  border-radius: 8px;
+}
+
+.jumbotron{
+ background-image: url("Census-bureau.png");
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+
+.newspaper {
+  font: 50px Helvetica Neue;
+  fill: #002868;
+  opacity: 1;
+  text-anchor: middle;
+}
+
+.chart::before {
+  z-index: -1;
+  display: block;
+  width: 960px;
+  height: 500px;
+  content: " ";
+  background-image: url("Census-bureau.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: cover;
+  opacity: 0.3;
+  position: absolute;
+}
+
+.tooltip {
+  position: absolute;
+  width: 135px;
+  height: 60px;
+  font: 12px Helvetica Neue;
+  padding: 1px;
+  padding-top: 4px;
+  color: white;
+  text-align: center;
+  background: #BF0A30;
+  opacity: 0.75;
+  border: 0;
+  border-radius: 10px;
+}
+
+.axis-text {
+  font: 20px Helvetica Neue;
+  fill: #002868;
+}
+
+.active {
+  font-weight: bold;
+  transition: fill 0.3s ease-out;
+}
+
+.inactive {
+  font-weight: light;
+  transition: fill 0.3s ease-out;
+}
+
+.inactive:hover {
+  fill: #BF0A30;
+  cursor: pointer;
+}
+
+.state-circles {
+  fill: #002868;
+  stroke: #BF0A30;
+  opacity: 1;
+}
+
+.state-abbr {
+  fill: white;
+  font: 20px Myriad Pro;
+  text-anchor: middle;
+}
+
+
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%; /* Set the fixed height of the footer here */
+  height: 10px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+#footer p {
+  margin: 0;
+  font-size: 16px;
+}
